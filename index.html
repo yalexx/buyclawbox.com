@@ -1,381 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buy ClawBox | Local AI Hardware with OpenClaw Pre-installed</title>
-  <meta name="description" content="Buy ClawBox, a low-power local AI hardware box with NVIDIA Jetson Orin Nano 8GB, 67 TOPS, 512GB NVMe, 15W draw, and OpenClaw pre-installed for €549.">
-  <meta name="keywords" content="buy clawbox, clawbox price, local ai hardware, jetson orin nano ai box, private ai device, openclaw hardware, self hosted ai assistant">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Private AI Hardware — Own Your Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Clash+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0b1020;
-      --panel: #121933;
-      --panel-soft: #17203f;
-      --text: #ecf2ff;
-      --muted: #b8c3e1;
-      --line: #243156;
-      --accent: #7dd3fc;
-      --accent-2: #86efac;
-      --cta: #2563eb;
-      --cta-hover: #1d4ed8;
-      --max: 1120px;
+    body { font-family: 'DM Sans', sans-serif; background: #fcfcfd; color: #1a1a2e; }
+    h1,h2,h3 { font-family: 'Clash Display', sans-serif; }
+    .hero-bg { background: linear-gradient(160deg, #0f0f1a 0%, #1a1040 40%, #0d1b2a 100%); }
+    .btn-cta {
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      transition: all 0.3s; font-weight: 700; letter-spacing: 0.01em;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #09101f 0%, #0b1020 45%, #0d1326 100%);
-      color: var(--text);
-      line-height: 1.7;
-    }
-    a { color: var(--accent); }
-    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    .hero {
-      padding: 72px 0 44px;
-      border-bottom: 1px solid rgba(125, 211, 252, 0.14);
-      background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.28), transparent 34%), radial-gradient(circle at top left, rgba(134, 239, 172, 0.12), transparent 28%);
-    }
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 8px 12px;
-      border: 1px solid rgba(125, 211, 252, 0.26);
-      border-radius: 999px;
-      color: var(--accent);
-      background: rgba(125, 211, 252, 0.08);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-    h1, h2, h3 { line-height: 1.15; margin: 0 0 16px; }
-    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); max-width: 12ch; }
-    h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin-top: 0; }
-    h3 { font-size: 1.25rem; }
-    .lead {
-      max-width: 800px;
-      font-size: 1.15rem;
-      color: var(--muted);
-      margin-bottom: 28px;
-    }
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin: 28px 0 34px;
-    }
-    .button {
-      display: inline-block;
-      padding: 14px 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.2s ease;
-      border: 1px solid transparent;
-    }
-    .button.primary { background: var(--cta); color: #fff; }
-    .button.primary:hover { background: var(--cta-hover); }
-    .button.secondary {
-      background: transparent;
-      color: var(--text);
-      border-color: rgba(255,255,255,0.18);
-    }
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 14px;
-      margin-top: 26px;
-    }
-    .stat, .card, .faq-item {
-      background: rgba(18, 25, 51, 0.86);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-    }
-    .stat {
-      padding: 18px;
-    }
-    .stat strong {
-      display: block;
-      font-size: 1.5rem;
-      color: #fff;
-      margin-bottom: 4px;
-    }
-    main { padding: 42px 0 72px; }
-    section { margin: 0 0 26px; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-      margin-top: 22px;
-    }
-    .card {
-      padding: 22px;
-    }
-    .muted { color: var(--muted); }
-    .panel {
-      padding: 28px;
-      background: linear-gradient(180deg, rgba(23, 32, 63, 0.92), rgba(18, 25, 51, 0.92));
-      border: 1px solid var(--line);
-      border-radius: 22px;
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 22px;
-    }
-    ul, ol { padding-left: 20px; }
-    li + li { margin-top: 10px; }
-    .spec-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .spec-list li {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .spec-list li:last-child { border-bottom: none; }
-    .spec-list span:first-child { color: var(--muted); }
-    .faq {
-      display: grid;
-      gap: 14px;
-      margin-top: 22px;
-    }
-    .faq-item { padding: 20px; }
-    footer {
-      padding: 0 0 64px;
-    }
-    .note {
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-    @media (max-width: 800px) {
-      .two-col { grid-template-columns: 1fr; }
-      .hero { padding-top: 54px; }
-    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(245,158,11,0.35); }
+    .shield-glow { box-shadow: 0 0 60px rgba(99,102,241,0.15); }
+    .pricing-card { border: 2px solid transparent; transition: all 0.3s; }
+    .pricing-card:hover { border-color: #f59e0b; transform: translateY(-4px); }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "ClawBox",
-        "description": "ClawBox is a local AI hardware box with NVIDIA Jetson Orin Nano 8GB, 67 TOPS AI performance, 15W power draw, 512GB NVMe storage, and OpenClaw pre-installed.",
-        "brand": {"@type": "Brand", "name": "OpenClaw Hardware"},
-        "sku": "CLAWBOX-ORIN-8GB-512NVME",
-        "mpn": "CLAWBOX-ORIN-NANO-8GB",
-        "url": "https://openclawhardware.dev/",
-        "image": "https://openclawhardware.dev/clawbox-1.webp",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "price": "549",
-          "availability": "https://schema.org/InStock",
-          "url": "https://openclawhardware.dev/"
-        },
-        "additionalProperty": [
-          {"@type": "PropertyValue", "name": "Compute", "value": "67 TOPS"},
-          {"@type": "PropertyValue", "name": "Power Draw", "value": "15W"},
-          {"@type": "PropertyValue", "name": "Storage", "value": "512GB NVMe"},
-          {"@type": "PropertyValue", "name": "Software", "value": "OpenClaw pre-installed"}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Where can I buy ClawBox?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can buy ClawBox from the official OpenClaw Hardware store at https://openclawhardware.dev/."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does ClawBox cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ClawBox is listed at €549 for the NVIDIA Jetson Orin Nano 8GB configuration with 512GB NVMe storage and OpenClaw pre-installed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What hardware is inside ClawBox?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ClawBox uses NVIDIA Jetson Orin Nano 8GB hardware, provides 67 TOPS of AI compute, includes 512GB NVMe storage, and is designed to run at about 15W."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why buy ClawBox instead of building a DIY box?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ClawBox is aimed at people who want working local AI hardware fast. Instead of sourcing parts, flashing images, debugging drivers, and wiring remote access, you get a ready device with OpenClaw already installed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does ClawBox support private, local AI workflows?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. ClawBox is built for local AI use cases, so users who care about privacy, predictable ownership costs, and always-on access can keep more of the workflow on their own hardware."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
-<body>
-  <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Buy ClawBox, run AI on your own hardware</div>
-      <h1>Buy ClawBox for a practical local AI setup</h1>
-      <p class="lead">If you are searching for the simplest way to buy ClawBox, this page is the short answer. ClawBox is a ready-to-use local AI hardware system built around the NVIDIA Jetson Orin Nano 8GB. It delivers 67 TOPS of AI performance, runs at roughly 15W, includes a 512GB NVMe drive, and ships with OpenClaw pre-installed, all for <strong>€549</strong>. Instead of piecing together a DIY edge AI build, you can start from a system designed to get you from unboxing to useful work fast.</p>
-      <div class="cta-row">
-        <a class="button primary" href="https://openclawhardware.dev/">Buy ClawBox at the official store</a>
-        <a class="button secondary" href="https://openclawhardware.dev/">See product details</a>
+<body class="antialiased">
+  <nav x-data="{open:false}" class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 text-xl font-bold text-slate-900 no-underline">
+        <span class="text-2xl">🔒</span>PrivateAI
+      </a>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#how" class="text-slate-600 hover:text-slate-900 no-underline">How It Works</a>
+        <a href="#compare" class="text-slate-600 hover:text-slate-900 no-underline">Compare</a>
+        <a href="#pricing" class="text-slate-600 hover:text-slate-900 no-underline">Pricing</a>
+        <a href="/blog/" class="text-slate-600 hover:text-slate-900 no-underline">Blog</a>
       </div>
-      <div class="stats">
-        <div class="stat"><strong>€549</strong><span>One-time hardware purchase</span></div>
-        <div class="stat"><strong>67 TOPS</strong><span>NVIDIA Jetson Orin Nano 8GB AI performance</span></div>
-        <div class="stat"><strong>15W</strong><span>Low power draw for always-on use</span></div>
-        <div class="stat"><strong>512GB NVMe</strong><span>Fast local storage out of the box</span></div>
+      <button @click="open=!open" class="md:hidden text-slate-600">☰</button>
+    </div>
+  </nav>
+
+  <section class="hero-bg text-white py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-10 right-1/4 w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 left-1/4 w-80 h-80 bg-red-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto text-center px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm mb-8">
+        🔐 Trusted by privacy-first organizations
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Your Data Never<br>Leaves Your Desk</h1>
+      <p class="text-lg text-white/70 max-w-xl mx-auto mb-10">Private AI hardware that runs 100% offline. No cloud. No telemetry. No compromises. Just pure, private intelligence.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#pricing" class="btn-cta text-white px-10 py-4 rounded-full text-lg no-underline">Get Protected</a>
+        <a href="#how" class="px-10 py-4 rounded-full text-lg font-semibold text-white border-2 border-white/30 hover:border-white/60 no-underline transition">How It Works</a>
+      </div>
+      <div class="flex justify-center gap-8 mt-12 text-sm text-white/50">
+        <span>✓ Zero Cloud Dependency</span><span>✓ Full Disk Encryption</span><span>✓ Open Source</span>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <div class="wrap">
-      <section class="panel">
-        <h2>Why people search for “buy ClawBox”</h2>
-        <p>Most people looking for ClawBox are not trying to buy a random mini PC. They are trying to buy a cleaner way to run AI locally. That usually means they want a box they can actually own, understand, and keep online without babysitting it. They want something more serious than a toy board, but less annoying than a ground-up build that turns into a weekend project and then keeps demanding more weekends after that.</p>
-        <p>ClawBox lands in that exact space. The hardware is capable enough for real edge AI tasks, but the pitch is not just raw silicon. The useful part is the combination: NVIDIA Jetson Orin Nano 8GB for acceleration, 512GB NVMe for fast storage, a 15W footprint that makes it realistic to leave on, and OpenClaw already installed so the software side is not a blank page. If you want to buy ClawBox because you care about ownership, privacy, low power, and less setup drama, that is the core reason it exists.</p>
-        <p>There is also a cost story here. A lot of AI buyers start by paying monthly for hosted tools and only later realize they want a device that lives at home or in the office, keeps working on their schedule, and does not force them into another recurring subscription decision. A one-time hardware purchase at €549 is straightforward. You know what you are getting and you own the box.</p>
-      </section>
-
-      <section class="grid">
-        <article class="card">
-          <h3>Built for local AI</h3>
-          <p class="muted">ClawBox is designed for people who want AI workflows on hardware they control, not only in somebody else’s cloud.</p>
-        </article>
-        <article class="card">
-          <h3>Low-power enough to stay on</h3>
-          <p class="muted">At about 15W, it makes sense as an always-on helper instead of a loud, power-hungry machine you avoid leaving online.</p>
-        </article>
-        <article class="card">
-          <h3>Ready faster than DIY</h3>
-          <p class="muted">OpenClaw comes pre-installed, which removes a lot of the friction that normally appears before the first useful result.</p>
-        </article>
-        <article class="card">
-          <h3>Made for practical ownership</h3>
-          <p class="muted">A complete box with storage, software, and a clear product page is easier to buy and easier to live with.</p>
-        </article>
-      </section>
-
-      <section class="two-col">
-        <article class="panel">
-          <h2>ClawBox specs at a glance</h2>
-          <p>If your main question is whether the hardware is real enough for everyday use, the answer is yes. The configuration is not inflated with vague marketing language. It is a very concrete package built around the parts and numbers people actually compare when they evaluate AI hardware.</p>
-          <ul class="spec-list">
-            <li><span>AI compute platform</span><strong>NVIDIA Jetson Orin Nano 8GB</strong></li>
-            <li><span>Performance</span><strong>67 TOPS</strong></li>
-            <li><span>Power draw</span><strong>15W</strong></li>
-            <li><span>Storage</span><strong>512GB NVMe</strong></li>
-            <li><span>Software</span><strong>OpenClaw pre-installed</strong></li>
-            <li><span>Price</span><strong>€549</strong></li>
-          </ul>
-          <p class="note">The official store is the best place to confirm current availability and ordering details.</p>
-        </article>
-        <article class="panel">
-          <h2>What buying ClawBox really saves you</h2>
-          <ol>
-            <li><strong>Parts selection time.</strong> No hunting for a compatible board, storage, enclosure, power supply, and all the small extras that always seem to appear late.</li>
-            <li><strong>Setup friction.</strong> You are not starting from an empty device and a stack of tabs. OpenClaw is already there.</li>
-            <li><strong>Power waste.</strong> A 15W machine is easier to justify as a permanent background assistant.</li>
-            <li><strong>Decision fatigue.</strong> Instead of comparing ten half-compatible approaches, you can buy the box and move on to using it.</li>
-          </ol>
-        </article>
-      </section>
-
-      <section class="panel">
-        <h2>Who should buy ClawBox</h2>
-        <p>ClawBox is a good fit for several kinds of buyers, and they usually arrive here with slightly different motivations. The first group is the privacy-focused user. They are tired of sending every task outward by default and want a box that lets them keep more of the workflow close. The second group is the tinkerer who likes local AI but is honest enough to admit that building everything from scratch every time is not the most efficient use of life. The third group is the busy operator, founder, or engineer who wants a working local assistant without adding another long setup trail to the backlog.</p>
-        <p>Those groups overlap more than they think. They all want ownership. They all want predictable costs. They all want hardware that can stay online without behaving like a desktop workstation bolted into a closet. They all want a product that feels intentional instead of improvised. That is why the “buy ClawBox” search is less about impulse shopping and more about finding a local AI system that already makes sense.</p>
-        <p>If you know what Jetson hardware is and you specifically want something around the Orin Nano 8GB class, the value proposition gets even clearer. ClawBox gives you that compute tier in a finished product with storage included and OpenClaw already installed. If you do not know the Jetson lineup in detail, the simple interpretation is that you are getting a modern, efficient AI box that is meant to do useful local work without demanding a huge power budget.</p>
-      </section>
-
-      <section class="panel">
-        <h2>Buying ClawBox versus building your own local AI box</h2>
-        <p>DIY can be fun. It can also be a trap when what you actually wanted was the outcome, not the assembly process. A self-built system often starts with excitement and then turns into a chain of small chores: comparing boards, checking thermals, ordering storage, flashing images, solving a driver issue, tuning startup behavior, figuring out remote access, and cleaning up rough edges so the machine can be trusted to stay online.</p>
-        <p>ClawBox is for the person who would rather skip that entire prologue. That does not mean you lose flexibility. It means the foundation is already in place. The device is still rooted in a hardware platform that technical users respect, but the entry point is much better. You are buying a finished product rather than volunteering to become the integration layer between five separate product pages.</p>
-        <p>This difference matters more over time than it does on day one. A DIY build can look cheaper until you count the hidden cost of the hours around it. ClawBox trades a little of that uncertainty for speed, clarity, and a better chance that the hardware will keep serving you instead of becoming another nearly-finished experiment on the shelf.</p>
-      </section>
-
-      <section class="panel">
-        <h2>Why the hardware profile matters</h2>
-        <p>The reason the Jetson Orin Nano 8GB, 67 TOPS, 15W, and 512GB NVMe combination works so well for a product like this is balance. AI hardware is easy to market badly because people tend to isolate one number and ignore the rest. But practical ownership is all about balance. Too weak, and the device feels pointless. Too power-hungry, and you stop leaving it on. Too little storage, and you are managing space immediately. Too much setup, and you never reach the steady state where the box becomes part of your daily flow.</p>
-        <p>ClawBox avoids that lopsided feeling. The 67 TOPS figure tells you there is real AI acceleration available. The 15W draw tells you it is reasonable to run continuously. The 512GB NVMe drive means you have meaningful fast local storage from the start. OpenClaw being pre-installed matters because software readiness is part of the hardware value, not a separate afterthought.</p>
-        <p>That is what makes this a product rather than a parts list. When people want to buy ClawBox, they are usually responding to the combination, not just one spec pulled out of context.</p>
-      </section>
-
-      <section class="panel">
-        <h2>What the buying experience should feel like</h2>
-        <p>When you buy a local AI device, the ideal experience is boring in the best possible way. You read the product page, confirm the specs, decide it matches your use case, place the order, and then spend your time using the hardware instead of rationalizing the purchase for the next three days. ClawBox fits that kind of decision path well because the message is clean: this is a dedicated local AI box with real edge hardware, low power usage, storage included, and OpenClaw already installed.</p>
-        <p>That clarity matters. It means you are not guessing whether the seller expects you to finish the software stack yourself. You are not trying to decode whether the quoted price is for a bare board or a usable system. You are not wondering whether “AI-ready” means anything concrete. Here, it does. If you are ready to buy ClawBox, the official product page is where the live ordering details belong, and that is exactly where the page below points you.</p>
-        <div class="cta-row">
-          <a class="button primary" href="https://openclawhardware.dev/">Go to the official ClawBox order page</a>
+  <section id="how" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16">How Private AI Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl bg-slate-50">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-amber-400 to-red-500 flex items-center justify-center text-white text-2xl font-bold mb-5">1</div>
+          <h3 class="text-xl font-bold mb-3">Plug In</h3>
+          <p class="text-slate-500">Connect power and ethernet. The device boots into a secure, encrypted environment automatically.</p>
         </div>
-      </section>
-
-      <section class="panel">
-        <h2>Frequently asked questions</h2>
-        <div class="faq">
-          <article class="faq-item">
-            <h3>Where do I buy ClawBox?</h3>
-            <p>The official place to buy ClawBox is <a href="https://openclawhardware.dev/">openclawhardware.dev</a>. That is the right page for current ordering information, product details, and availability.</p>
-          </article>
-          <article class="faq-item">
-            <h3>How much is ClawBox?</h3>
-            <p>ClawBox is listed at €549 for the NVIDIA Jetson Orin Nano 8GB configuration with 67 TOPS, 15W power draw, 512GB NVMe storage, and OpenClaw pre-installed.</p>
-          </article>
-          <article class="faq-item">
-            <h3>What makes ClawBox different from a generic mini PC?</h3>
-            <p>The difference is focus. ClawBox is sold as a purpose-built local AI hardware system with a Jetson platform and pre-installed OpenClaw, rather than as a blank general-purpose box that leaves the integration work to you.</p>
-          </article>
-          <article class="faq-item">
-            <h3>Is ClawBox good for people who want local AI ownership?</h3>
-            <p>Yes. That is one of the clearest reasons to buy it. If you want a dedicated box you own, can leave running, and can keep close to your own environment, ClawBox is aimed directly at that use case.</p>
-          </article>
-          <article class="faq-item">
-            <h3>Do I need to build or install everything myself?</h3>
-            <p>No. A big part of the appeal is that OpenClaw comes pre-installed. That reduces the time between delivery and your first useful result.</p>
-          </article>
-          <article class="faq-item">
-            <h3>Who is ClawBox for?</h3>
-            <p>It fits privacy-minded users, self-hosting enthusiasts, engineers, founders, and anyone who wants local AI hardware without turning the purchase into a full custom integration project.</p>
-          </article>
+        <div class="p-8 rounded-2xl bg-slate-50">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-amber-400 to-red-500 flex items-center justify-center text-white text-2xl font-bold mb-5">2</div>
+          <h3 class="text-xl font-bold mb-3">Set Your Key</h3>
+          <p class="text-slate-500">Generate your encryption key locally. Only you can access your AI's data — not even we can.</p>
         </div>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap panel">
-      <h2>Ready to buy ClawBox?</h2>
-      <p class="lead">If the goal is simple, ownable, local AI hardware that avoids unnecessary setup friction, ClawBox is the clean option. It combines NVIDIA Jetson Orin Nano 8GB performance, 67 TOPS AI compute, 15W efficiency, 512GB NVMe storage, and OpenClaw pre-installed in one product at €549.</p>
-      <div class="cta-row">
-        <a class="button primary" href="https://openclawhardware.dev/">Visit the official ClawBox store</a>
+        <div class="p-8 rounded-2xl bg-slate-50">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-amber-400 to-red-500 flex items-center justify-center text-white text-2xl font-bold mb-5">3</div>
+          <h3 class="text-xl font-bold mb-3">Start Chatting</h3>
+          <p class="text-slate-500">Your AI is ready. Every conversation stays on your hardware. Nothing is ever uploaded.</p>
+        </div>
       </div>
-      <p class="note">This page is focused on helping people searching for “buy ClawBox” reach the official OpenClaw Hardware product page quickly.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-24 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-lg text-slate-500 mb-12">One purchase. No subscription. No hidden costs.</p>
+      <div class="pricing-card max-w-sm mx-auto rounded-2xl bg-white shadow-xl p-10 text-left">
+        <div class="text-sm text-amber-600 font-bold uppercase tracking-wider mb-2">Hardware</div>
+        <div class="text-5xl font-bold mb-4">€549</div>
+        <div class="text-slate-500 mb-8">One-time purchase. Includes everything.</div>
+        <ul class="space-y-3 mb-8 text-sm">
+          <li class="flex gap-2"><span class="text-green-500">✓</span> NVIDIA Jetson Orin Nano</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 8GB RAM + 512GB NVMe</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Full disk encryption</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> OpenClaw pre-installed</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Lifetime software updates</li>
+        </ul>
+        <a href="#" class="btn-cta text-white block text-center py-4 rounded-full no-underline">Secure Your Device</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+      <p>Private AI Hardware © 2026 · <a href="/privacy/" class="text-amber-500 no-underline">Privacy Policy</a> · <a href="/terms/" class="text-amber-500 no-underline">Terms</a></p>
     </div>
   </footer>
 </body>
